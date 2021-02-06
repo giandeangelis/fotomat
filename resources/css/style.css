@@ -1,4 +1,5 @@
 /* Universal Styles */
+
 body * {
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
@@ -8,10 +9,6 @@ body * {
 .main-content {
   position: relative;
   top: 5.3125rem; /* To offset for fixed header. */
-}
-
-.center {
-  text-align: center;
 }
 
 .button {
@@ -26,6 +23,7 @@ body * {
 
 .image-container img {
   display: block;
+  max-width: 100%;
 }
 
 @media only screen and (max-width: 760px) {
@@ -116,7 +114,7 @@ header .mobile {
 
 #sign-up-section {
   background-image: url('../images/banner-landingpage.jpg');
-  background-image: cover;
+  background-size: cover;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -224,15 +222,21 @@ header .mobile {
 
 .feature {
   flex: 1;
+  max-height: 635px;
   padding: 2rem;
   margin: 0px 1.25rem;
   background-color: white;
 }
 
 .feature .image-container {
-  width: 90%;
-  height: 65%;
+  max-height: 65%;
   margin: 0 auto;
+}
+
+.feature .content {
+  text-align: center;
+  width: 80%;
+  margin: 40px auto;
 }
 
 .feature h2 {
@@ -240,6 +244,7 @@ header .mobile {
   font-size: 2.25rem;
   font-weight: bold;
   color: #4a4a4a;
+  line-height: 1.2;
 }
 
 .feature h3 {
