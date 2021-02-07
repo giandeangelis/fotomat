@@ -352,7 +352,7 @@ header .mobile {
   text-align: center;
 }
 
-#quotes-section quote {
+#quotes-section .quote {
   padding-right: 1.875rem;
   font-family: "Palatino", serif;
   font-size: 1.875rem;
@@ -392,8 +392,11 @@ footer {
 }
 
 footer .content {
+  height: 100%;
   color: white;
   display: flex;
+  align-items: center;
+  padding: 0 32px;
   font-size: .75rem;
   font-size: 12px;
 }
