@@ -347,8 +347,9 @@ header .mobile {
   background-color: #f3f3f3;
 }
 
-#quotes-section content {
-  padding: 5rem 0;
+#quotes-section .content {
+  padding: 60px 0;
+  text-align: center;
 }
 
 #quotes-section quote {
@@ -360,8 +361,9 @@ header .mobile {
   color: #4a4a4a;
 }
 
-#quotes-section quote-citation {
+#quotes-section .quote-citation {
   height: 1.875rem;
+  padding-left: 30px;
 }
 
 @media only screen and (max-width: 760px) {
@@ -386,12 +388,14 @@ header .mobile {
 footer {
   background-color: #9b9b9b;
   padding: 1.5rem 2rem;
+  height: 62px;
 }
 
 footer .content {
   color: white;
   display: flex;
   font-size: .75rem;
+  font-size: 12px;
 }
 
 footer .copyright {
